@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>SmartPickAura — Discover Smart Products That Make Life Better</title>
+  <meta name="description" content="SmartPickAura helps you discover trending, high-quality beauty, skincare, haircare, lifestyle products and smart recommendations. Find your next favorite product today.">
+  <meta name="keywords" content="beauty products, skincare, haircare, product recommendations, trending products, lifestyle, self-care, beauty tools, smart picks">
+  <meta name="author" content="SmartPickAura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smartpickaura.com/">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SmartPickAura — Discover Smart Products That Make Life Better">
+  <meta property="og:description" content="Beauty, self-care, lifestyle essentials, and trending product recommendations all in one place.">
+  <meta property="og:url" content="https://smartpickaura.com/">
+  <meta property="og:site_name" content="SmartPickAura">
+  <meta property="og:image" content="images/hero_background.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SmartPickAura — Discover Smart Products That Make Life Better">
+  <meta name="twitter:description" content="Beauty, self-care, lifestyle essentials, and trending product recommendations all in one place.">
+  <meta name="twitter:image" content="images/hero_background.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SmartPickAura",
+    "url": "https://smartpickaura.com",
+    "description": "SmartPickAura helps you discover trending, high-quality beauty, skincare, haircare, and lifestyle products.",
+    "email": "brotalkfinance2024@gmail.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+923331923856",
+      "contactType": "customer service",
+      "areaServed": "Worldwide",
+      "availableLanguage": "English"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231B2A4A'/><text x='50' y='65' font-family='serif' font-size='48' font-weight='bold' fill='%23C9A84C' text-anchor='middle'>S</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">Smart<span>Pick</span>Aura</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#home" class="nav-logo" aria-label="SmartPickAura Home">
+        <div class="nav-logo-icon" aria-hidden="true">✦</div>
+        Smart<span>Pick</span>Aura
+      </a>
+
+      <div class="nav-menu" id="nav-menu" role="menubar">
+        <a href="#home" class="nav-link active" role="menuitem">Home</a>
+        <a href="#categories" class="nav-link" role="menuitem">Categories</a>
+        <a href="#trending" class="nav-link" role="menuitem">Trending</a>
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#faq" class="nav-link" role="menuitem">FAQ</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+        <a href="#contact" class="nav-cta" role="menuitem">Get in Touch</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg">
+      <img src="images/hero_background.png" alt="Premium beauty products arrangement" width="1920" height="1080" loading="eager">
+    </div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Trusted Product Discovery Platform
+        </div>
+
+        <h1 class="hero-title">
+          Discover <span class="highlight">Smart Products</span> That Make Life Better
+        </h1>
+
+        <p class="hero-description">
+          Beauty, self-care, lifestyle essentials, and trending product recommendations — all in one place. Curated picks that simplify your shopping experience.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#categories" class="btn btn-primary" id="hero-explore-btn">
+            Explore Products
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+            Contact Us
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-counter="500" data-suffix="+">0</div>
+            <div class="hero-stat-label">Products Curated</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-counter="50" data-suffix="K+">0</div>
+            <div class="hero-stat-label">Happy Readers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-counter="98" data-suffix="%">0</div>
+            <div class="hero-stat-label">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-main">
+            <img src="images/cat_beauty.png" alt="Premium beauty and self-care product showcase" width="500" height="600" loading="eager">
+          </div>
+          <div class="hero-image-decorator hero-decorator-1" aria-hidden="true"></div>
+          <div class="hero-image-decorator hero-decorator-2" aria-hidden="true"></div>
+
+          <div class="hero-float-card hero-float-card-1" aria-hidden="true">
+            <div class="float-card-icon gold">⭐</div>
+            <div class="float-card-label">Top Rated</div>
+            <div class="float-card-value">500+ Products</div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-2" aria-hidden="true">
+            <div class="float-card-icon blue">🔥</div>
+            <div class="float-card-label">Trending Now</div>
+            <div class="float-card-value">Updated Daily</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED CATEGORIES ============ -->
+  <section class="categories section" id="categories" aria-label="Featured product categories">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Explore</span>
+        <h2 class="section-title">Featured Categories</h2>
+        <p class="section-subtitle">Browse through our carefully curated collections of the best products in beauty, self-care, and lifestyle.</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Category 1: Beauty & Self-Care -->
+        <div class="category-card reveal stagger-1" id="cat-beauty">
+          <img class="category-card-image" src="images/cat_beauty.png" alt="Beauty and self-care products collection" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Beauty & Self-Care</h3>
+              <p class="category-card-count">120+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Skincare -->
+        <div class="category-card reveal stagger-2" id="cat-skincare">
+          <img class="category-card-image" src="images/cat_skincare.png" alt="Premium skincare essentials" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Skincare</h3>
+              <p class="category-card-count">85+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Haircare -->
+        <div class="category-card reveal stagger-3" id="cat-haircare">
+          <img class="category-card-image" src="images/cat_haircare.png" alt="Haircare products collection" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Haircare</h3>
+              <p class="category-card-count">70+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Beauty Tools -->
+        <div class="category-card reveal stagger-4" id="cat-tools">
+          <img class="category-card-image" src="images/cat_tools.png" alt="Beauty tools and accessories" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Beauty Tools</h3>
+              <p class="category-card-count">45+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Lifestyle Finds -->
+        <div class="category-card reveal stagger-5" id="cat-lifestyle">
+          <img class="category-card-image" src="images/cat_lifestyle.png" alt="Modern lifestyle products" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Lifestyle Finds</h3>
+              <p class="category-card-count">95+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Trending Products -->
+        <div class="category-card reveal stagger-6" id="cat-trending">
+          <img class="category-card-image" src="images/cat_haircare.png" alt="Trending products collection" width="400" height="500" loading="lazy">
+          <div class="category-card-overlay">
+            <div class="category-card-content">
+              <h3 class="category-card-title">Trending Products</h3>
+              <p class="category-card-count">200+ Products</p>
+              <a href="#trending" class="category-card-btn">
+                Explore
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRENDING PRODUCTS ============ -->
+  <section class="trending section" id="trending" aria-label="Trending products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What's Hot</span>
+        <h2 class="section-title">Trending Products</h2>
+        <p class="section-subtitle">Our handpicked selection of the most popular and highly-rated products right now.</p>
+      </div>
+
+      <div class="trending-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal stagger-1" id="product-1">
+          <span class="product-card-badge">Trending</span>
+          <div class="product-card-image">
+            <img src="images/cat_skincare.png" alt="Vitamin C Brightening Serum" width="300" height="300" loading="lazy">
+            <div class="product-card-image-overlay"></div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Skincare</span>
+            <h3 class="product-card-title">Vitamin C Brightening Serum</h3>
+            <p class="product-card-desc">A powerful antioxidant serum that brightens skin tone and reduces dark spots for a radiant, youthful complexion.</p>
+            <div class="product-card-footer">
+              <div class="product-card-rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>4.9</span>
+              </div>
+              <a href="#contact" class="btn btn-gold-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal stagger-2" id="product-2">
+          <span class="product-card-badge">Best Seller</span>
+          <div class="product-card-image">
+            <img src="images/cat_tools.png" alt="Professional Hair Styling Set" width="300" height="300" loading="lazy">
+            <div class="product-card-image-overlay"></div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Haircare</span>
+            <h3 class="product-card-title">Professional Hair Styling Set</h3>
+            <p class="product-card-desc">Salon-quality hair tools for effortless styling at home. Achieve professional results with ceramic technology.</p>
+            <div class="product-card-footer">
+              <div class="product-card-rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>4.8</span>
+              </div>
+              <a href="#contact" class="btn btn-gold-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal stagger-3" id="product-3">
+          <span class="product-card-badge">Editor's Pick</span>
+          <div class="product-card-image">
+            <img src="images/cat_lifestyle.png" alt="Smart Wellness Essentials Kit" width="300" height="300" loading="lazy">
+            <div class="product-card-image-overlay"></div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Lifestyle</span>
+            <h3 class="product-card-title">Smart Wellness Essentials Kit</h3>
+            <p class="product-card-desc">Everything you need for a balanced daily routine. Premium wellness products curated for modern living.</p>
+            <div class="product-card-footer">
+              <div class="product-card-rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>4.7</span>
+              </div>
+              <a href="#contact" class="btn btn-gold-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card reveal stagger-4" id="product-4">
+          <span class="product-card-badge">New Arrival</span>
+          <div class="product-card-image">
+            <img src="images/cat_beauty.png" alt="Luxury Jade Beauty Roller Set" width="300" height="300" loading="lazy">
+            <div class="product-card-image-overlay"></div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Beauty Tools</span>
+            <h3 class="product-card-title">Luxury Jade Beauty Roller Set</h3>
+            <p class="product-card-desc">Natural jade roller and gua sha set for facial massage. Reduce puffiness and improve circulation naturally.</p>
+            <div class="product-card-footer">
+              <div class="product-card-rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>4.9</span>
+              </div>
+              <a href="#contact" class="btn btn-gold-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why-choose section" id="why-choose" aria-label="Why choose SmartPickAura">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Us</span>
+        <h2 class="section-title">Why Choose SmartPickAura</h2>
+        <p class="section-subtitle">We go beyond just listing products — we help you make smarter, confident purchasing decisions.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal stagger-1" id="feature-1">
+          <div class="feature-icon" aria-hidden="true">✨</div>
+          <h3 class="feature-title">Carefully Selected Products</h3>
+          <p class="feature-desc">Every product is hand-picked and evaluated for quality, value, and real-world usefulness before making it to our recommendations.</p>
+        </div>
+
+        <div class="feature-card reveal stagger-2" id="feature-2">
+          <div class="feature-icon" aria-hidden="true">🔥</div>
+          <h3 class="feature-title">Trending Recommendations</h3>
+          <p class="feature-desc">Stay ahead with the latest trending products across beauty, skincare, and lifestyle — updated regularly to keep you informed.</p>
+        </div>
+
+        <div class="feature-card reveal stagger-3" id="feature-3">
+          <div class="feature-icon" aria-hidden="true">💎</div>
+          <h3 class="feature-title">Honest Product Insights</h3>
+          <p class="feature-desc">We provide transparent, unbiased insights about each product, helping you make well-informed purchasing decisions.</p>
+        </div>
+
+        <div class="feature-card reveal stagger-4" id="feature-4">
+          <div class="feature-icon" aria-hidden="true">🌸</div>
+          <h3 class="feature-title">Beauty & Lifestyle Focus</h3>
+          <p class="feature-desc">Specialized in beauty, self-care, and lifestyle products — we understand what matters most to our audience.</p>
+        </div>
+
+        <div class="feature-card reveal stagger-5" id="feature-5">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <h3 class="feature-title">User-Friendly Experience</h3>
+          <p class="feature-desc">Our clean, intuitive platform makes discovering and exploring products a delightful, seamless experience.</p>
+        </div>
+
+        <div class="feature-card reveal stagger-6" id="feature-6">
+          <div class="feature-icon" aria-hidden="true">🛡️</div>
+          <h3 class="feature-title">Trusted by Thousands</h3>
+          <p class="feature-desc">Join a growing community of smart shoppers who trust SmartPickAura for reliable product recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS / COUNTERS ============ -->
+  <section class="stats" id="stats" aria-label="Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal stagger-1">
+          <div class="stat-number" data-counter="500" data-suffix="+">0</div>
+          <div class="stat-label">Products Reviewed</div>
+        </div>
+        <div class="stat-item reveal stagger-2">
+          <div class="stat-number" data-counter="50" data-suffix="K+">0</div>
+          <div class="stat-label">Happy Readers</div>
+        </div>
+        <div class="stat-item reveal stagger-3">
+          <div class="stat-number" data-counter="6" data-suffix="">0</div>
+          <div class="stat-label">Product Categories</div>
+        </div>
+        <div class="stat-item reveal stagger-4">
+          <div class="stat-number" data-counter="98" data-suffix="%">0</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials section" id="testimonials" aria-label="Customer testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our Community Says</h2>
+        <p class="section-subtitle">Real stories from people who discovered amazing products through SmartPickAura.</p>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <div class="testimonials-track" id="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"SmartPickAura completely changed how I shop for skincare. Their recommendations are spot-on, and I've discovered products I never would have found on my own!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SA</div>
+              <div class="testimonial-author-info">
+                <h4>Sarah A.</h4>
+                <p>Skincare Enthusiast</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"I love how they curate only the best products. Every recommendation I've tried has been fantastic. It saves me so much time browsing through hundreds of options."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MK</div>
+              <div class="testimonial-author-info">
+                <h4>Maria K.</h4>
+                <p>Beauty Blogger</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"The trending products section is my go-to every week. SmartPickAura truly understands what modern consumers need. Highly recommended for anyone into self-care!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JR</div>
+              <div class="testimonial-author-info">
+                <h4>James R.</h4>
+                <p>Lifestyle Enthusiast</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"Finally, a platform that cuts through the noise. SmartPickAura's honest reviews helped me build an amazing haircare routine. My hair has never looked better!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">LP</div>
+              <div class="testimonial-author-info">
+                <h4>Lisa P.</h4>
+                <p>Haircare Lover</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"As someone who's always looking for the best beauty deals, SmartPickAura is a game-changer. The product insights are detailed, honest, and incredibly helpful."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AN</div>
+              <div class="testimonial-author-info">
+                <h4>Aisha N.</h4>
+                <p>Smart Shopper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Navigation -->
+      <div class="testimonials-nav" aria-label="Testimonial navigation">
+        <button id="testimonial-prev" aria-label="Previous testimonial">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button id="testimonial-next" aria-label="Next testimonial">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="testimonials-dots" aria-label="Testimonial indicators">
+        <div class="testimonials-dot active" data-index="0" role="button" tabindex="0" aria-label="Go to testimonial 1"></div>
+        <div class="testimonials-dot" data-index="1" role="button" tabindex="0" aria-label="Go to testimonial 2"></div>
+        <div class="testimonials-dot" data-index="2" role="button" tabindex="0" aria-label="Go to testimonial 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT US ============ -->
+  <section class="about section" id="about" aria-label="About SmartPickAura">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-image-main">
+            <img src="images/cat_lifestyle.png" alt="SmartPickAura team curating products" width="560" height="450" loading="lazy">
+          </div>
+          <div class="about-image-accent" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">About SmartPickAura</h2>
+
+          <p class="about-text">
+            SmartPickAura helps users discover practical, trending, and high-quality products in beauty, self-care, and lifestyle categories. We understand that finding the right product can be overwhelming — that's why we do the research for you.
+          </p>
+
+          <p class="about-text">
+            Our mission is to simplify product discovery by highlighting products that offer value, convenience, and style. We focus on finding useful products that help people improve their daily routines and make smarter purchasing decisions.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Expert Curation
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Honest Reviews
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Daily Updates
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Community Driven
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ SECTION ============ -->
+  <section class="faq section" id="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about SmartPickAura and our product recommendations.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item reveal stagger-1" id="faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            What is SmartPickAura?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" role="region">
+            <div class="faq-answer-content">
+              SmartPickAura is a product discovery and recommendation platform focused on beauty, skincare, haircare, lifestyle products, and trending Amazon finds. We curate the best products to help you make smarter purchasing decisions.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-2" id="faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            How do you select products to recommend?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" role="region">
+            <div class="faq-answer-content">
+              Each product goes through a thorough evaluation process. We consider product quality, customer reviews, value for money, brand reputation, and real-world effectiveness before adding it to our recommendations.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-3" id="faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            Are your product reviews honest and unbiased?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" role="region">
+            <div class="faq-answer-content">
+              Absolutely. Transparency and honesty are at the core of everything we do. We provide genuine insights, highlighting both the pros and cons of each product to help you make informed decisions.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-4" id="faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            How often are new products added?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" role="region">
+            <div class="faq-answer-content">
+              We update our recommendations regularly — often weekly. Our trending products section is refreshed frequently to ensure you always have access to the latest and most popular finds.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-5" id="faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            Can I suggest a product for review?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-5" role="region">
+            <div class="faq-answer-content">
+              Yes! We love hearing from our community. You can suggest products for review through our contact form or WhatsApp. We'll evaluate and consider it for our upcoming recommendations.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-6" id="faq-6">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+            How can I get in touch with SmartPickAura?
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-answer-6" role="region">
+            <div class="faq-answer-content">
+              You can reach us via email at brotalkfinance2024@gmail.com, through WhatsApp at +923331923856, or by using the contact form on this page. We typically respond within 24 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter" id="newsletter" aria-label="Newsletter signup">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="newsletter-title">Stay Updated with Smart Picks</h2>
+        <p class="newsletter-desc">Subscribe to get the latest trending product recommendations, beauty tips, and exclusive finds delivered to your inbox.</p>
+
+        <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter subscription form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+          <button type="submit" class="btn btn-primary" id="newsletter-submit-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact section" id="contact" aria-label="Contact us">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="contact-info-desc">
+            Have a question, suggestion, or want to collaborate? We'd love to hear from you. Reach out and we'll get back to you as soon as possible.
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:brotalkfinance2024@gmail.com" class="contact-method" id="contact-email-link">
+              <div class="contact-method-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-method-label">Email Us</div>
+                <div class="contact-method-value">brotalkfinance2024@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/923331923856" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-whatsapp-link">
+              <div class="contact-method-icon" aria-hidden="true">💬</div>
+              <div>
+                <div class="contact-method-label">WhatsApp</div>
+                <div class="contact-method-value">+92 333 192 3856</div>
+              </div>
+            </a>
+
+            <div class="contact-method" id="contact-hours">
+              <div class="contact-method-icon" aria-hidden="true">🕐</div>
+              <div>
+                <div class="contact-method-label">Response Time</div>
+                <div class="contact-method-value">Within 24 Hours</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form id="contact-form" aria-label="Contact form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name</label>
+              <input type="text" class="form-input" id="contact-name" name="name" placeholder="Enter your full name" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Your Email</label>
+              <input type="email" class="form-input" id="contact-email" name="email" placeholder="Enter your email address" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Your Message</label>
+              <textarea class="form-textarea" id="contact-message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="contact-submit-btn">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+
+            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="#home" class="nav-logo" aria-label="SmartPickAura Home">
+            <div class="nav-logo-icon" aria-hidden="true">✦</div>
+            Smart<span>Pick</span>Aura
+          </a>
+          <p class="footer-brand-desc">
+            Your trusted source for discovering smart, trending, and high-quality products in beauty, self-care, and lifestyle categories.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#categories" class="footer-link">Categories</a>
+            <a href="#trending" class="footer-link">Trending</a>
+            <a href="#about" class="footer-link">About Us</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-heading">Categories</h3>
+          <div class="footer-links">
+            <a href="#categories" class="footer-link">Beauty & Self-Care</a>
+            <a href="#categories" class="footer-link">Skincare</a>
+            <a href="#categories" class="footer-link">Haircare</a>
+            <a href="#categories" class="footer-link">Beauty Tools</a>
+            <a href="#categories" class="footer-link">Lifestyle Finds</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="footer-heading">Support</h3>
+          <div class="footer-links">
+            <a href="#faq" class="footer-link">FAQ</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
+            <a href="mailto:brotalkfinance2024@gmail.com" class="footer-link">Email Support</a>
+            <a href="https://wa.me/923331923856" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp</a>
+            <a href="#newsletter" class="footer-link">Newsletter</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2024 <a href="#home">SmartPickAura</a>. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+  <button class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </button>
+
+  <!-- ============ BACK TO TOP BUTTON ============ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
